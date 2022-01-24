@@ -1,10 +1,16 @@
+@font-face {
+    font-family: 'Effra';
+    src: local('Effra Medium'), local('Effra-Medium'),
+        url('Effra-Medium.woff2') format('woff2'),
+        url('Effra-Medium.woff') format('woff'),
+        url('Effra-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
 
-*{
 
-    
-}
 body{
-    background-image: url("../img/Space-stars-purple_1680x1050.jpg");
+    background: #f9f3e5;
     background-repeat:repeat-x;
     background-size:cover;
     margin: 0;
@@ -13,6 +19,7 @@ body{
 .logo{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 .logo img{
     width: 242px;
@@ -31,7 +38,7 @@ body{
 
 .container-all-slider img {
     max-width: 100%;
-    height: 500px;
+    max-height: 440px;
 }
 .container-all-slider{
     position: relative;
@@ -39,7 +46,7 @@ body{
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
-    height: 500px;
+    height: 450px;
 }
 .slider{
     display: flex;
@@ -58,7 +65,7 @@ body{
     flex-shrink: 0;
     flex-grow:0;
     max-width: 100%;
-    height: 634px;
+    max-height: 195px;
     width: 100%;
 
 }
@@ -159,6 +166,53 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }
 /*fin del slider*/
 
+/*inicio del box nosotros*/
+.box_nosotros_container{
+    margin: 22px 0 17px 0;
+    width: 100%;
+}
+
+.box_nosotros_container h2{
+    position: relative;
+    width: 400px;
+    color: black;
+    left: 260px;
+    top: 17px;
+}
+.box_nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.nosotros_desc{
+    width: 80%;
+    margin-left: 30px;
+    text-align: center;
+}
+.nosotros_desc h3{
+    color: black;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.nosotros_desc p{
+    color: #ba3cbc;
+    font-size: 17px;
+    margin-top: -4px;
+    font-family: 'Effra';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+}
+
+
+/*fin del box nosotros*/
+
+/*inicio del menu conceptual*/
+
 .box_description_container{
     width: 100%;
     display: flex;
@@ -188,15 +242,15 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 .acordeon__titulo{
     display: block;
     padding: 15px;
-    background: crimson;
-    color: #ffff;
+    background: #5c388c;
+    color: #ffffff;
     font-size: 20px;
     cursor: pointer;
     border-bottom: 1px solid #ffff;
 }
 
 .acordeon__titulo:hover{
-    background: rgba(220, 20, 60, 0.8);
+    background:#5c388c6e;
 
 }
 
@@ -214,7 +268,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }
 
 .acordeon__contenido h4{
-    color: white;
+    color: #412764;
 }
 
 .acordeon input:checked ~ .acordeon__contenido{
@@ -226,7 +280,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 {
     cursor: pointer;;
     text-decoration: none;
-    color: #cfe5b8;
+    color: #e91e63;
     font-size: 20px;
 }
 .box_description .acordeon ul{
@@ -237,68 +291,11 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     margin-right: 20px;
 }
 .box_description .acordeon a:hover{
-    color: red;
-}
-/*css de contacto fijo inferior derecho*/
-.icon-plus{
-    color: #ffff;
-}
-/*fin css de contacto fijo inferior derecho*/
-
-/*css de las imagenes sobrepuestas  */
-
-.imgenes_mostrar{
-    height: 100vh;
-    width: 100vw;
-    background-color: #c5c5c5b3;
-    display: none;
-    position: fixed;
-    top: 1px;
-    z-index: 1;
-    
-}
-.ocultar{
-    display: flex;
-    justify-content: end;
-}
-.ocultar h3{
-    margin-right: 40px;
-    cursor: pointer;
-    color: white;
-}
-.imagen-terapias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    flex-wrap: wrap;
-    width: 90%;
-}
-.imagen-terapias img{
-    width: 350px;
-    height: 300px;
-
+    color: #5ad047;
 }
 
-.texto_especialidades{
-    width: 100%;
-    color: white;
-    justify-content: center;
-    display: flex;
-    margin-top: 32px;
-}
-.text{
-    text-align: center;
-    border: 1px solid white;
-    width: 75%;
-    background: #232526a6;
-}
-.text{
-    font-size: 21px;
-    color: #caf999;
-    font-style: oblique;
-}
-/* fin css de las imagenes sobrepuestas  */
+/*fin menu conceptual*/
+
 
 /*Aqui comienza la caja horario de atencion*/
 
@@ -314,14 +311,14 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     height: 82px;
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: black;
     align-items: center;
 }
 
 .horario_de_atencion .horario{
     height: auto;
     text-align: center;
-    color: #cfe5b8;
+    color: #0fd047;
     font-size: 19px;
 }
 
@@ -331,67 +328,33 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 .contacto_whatsapp i{
     margin-right: 20px;
+    color: #b63dba;
 }
 
 .contacto_whatsapp a{
     font-size: 20px;
-    color: #cfab67;
+    color: #0fd047;
+    text-decoration: none;
+}
+.contacto_phone a{
+    font-size: 20px;
+    color: #0fd047;
     text-decoration: none;
 }
 
+.contacto_phone i{
+    margin-right: 20px;
+    color: #b63dba;
+    font-size: 26px;
+}
+
 /*Aqui termina la caja de horario de atencion*/
-
-
-
-/*inicio del box nosotros*/
-.box_nosotros_container{
-    margin: 89px 0 90px 0;
-}
-
-.box_nosotros_container h2{
-    position: relative;
-    width: 400px;
-    color: white;
-    left: 260px;
-    top: 17px;
-}
-.box_nosotros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.box_nosotros img{
-    width: 200px;
-    height: 175px;
-}
-
-.nosotros_desc{
-    width: 50%;
-    margin-left: 30px;
-}
-.nosotros_desc h3{
-    color: white;
-    font-size: 28px;
-    margin-bottom: 18px;
-}
-
-.nosotros_desc p{
-    color: white;
-    font-size: 17px;
-    margin-top: -4px;
-}
-
-
-/*fin del box nosotros*/
-
 
 /*aqui comienza nuestros especialistas*/
 
 .box_especialistas{
     text-align: center;
-    margin-top: 36px;
+    margin: 36px 0 30px 0;
 
 }
 .box_especialista__desc{
@@ -407,29 +370,113 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 .box_especialista_img_desc{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 282px;
 }
 .box_des_especialista{
     width: 50%;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .box_des_especialista h4{
     padding: 10px;
     text-align: initial;
-    color:peachpuff ;
+    color:black ;
 }
 .box_des_especialista p{
 
-    font-size: 16px;
-    color: white;
+    
+    font-size: 20px;
+    color: #ff5722;
     text-align: initial;
     margin-left: 30px;
 }  
 
 .box_especialistas h3{
-    color: lemonchiffon;
+    color: black;
     font-size: 28px;
 }
+
+/*aqui termina especialista*/
+
+/*aqio comienza el footer */
+.contactos_derechos_reservaos{
+    width: 100%;
+    background: #d9d9d938;
+}
+
+.footer_contacto_programa{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+.footer_contacto_programa ul{
+    list-style: none;
+    margin-top: 30px;
+}
+.footer_contacto_programa li{
+    margin-top: 20px;
+}
+
+.footer_programa li a{
+    cursor: pointer;
+
+}
+.footer_contacto_programa li a{
+    color: #340d68;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer_contacto h3{
+    text-align: center;
+    font-size: 25px;
+}
+.footer_programa h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer_contacto p{
+    border: 1px solid #5c388c;
+    margin: 6px;
+    width: 78px;
+}
+
+.divisor_footer{
+    display: flex;
+    justify-content: center;
+}
+.divisor_footer p{
+    border: 1px solid black;
+    width: 75%;
+    text-align: center;
+
+}
+.todos_los_derechos_redes_sociales{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.derechos{
+    color: black;
+}
+.redes_sociales_footer ul{
+    display: flex;
+    list-style: none;
+}
+.redes_sociales_footer .icon-facebook, .icon-whatsapp, .icon-instagram{
+    color: #9b3333;
+    font-size: 30px;
+
+}
+
+.redes_sociales_footer a{
+    text-decoration: none;
+}
+/*termina el footer*/
+
 /*aqui comienza el boton de redes sociales */
 .container{
     display: block;
@@ -445,7 +492,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 .redes a, .icon-plus{
         display: block;
         text-decoration: none;
-        background-color: #cc2b2b;
+        background-color:  #5c388c;
         color:#fff;
         width: 40px;
         height: 40px;
@@ -474,7 +521,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }
 .icon-plus{
         cursor: pointer;
-        background: #f44141;
+        background:  #5c388c;
         font-size: 23px;
     
 }
@@ -492,7 +539,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         position: absolute;
         font-size: 12px;
         transform: translateY(-50%);
-        background: rgb(51, 51, 51);
+        background:  #5c388c;
         text-align: end;
         transition: all 0.1s ease-out 0s;
         font-family: unset;
@@ -505,86 +552,89 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         visibility: hidden;
 }
 
-
-
-
-
-/*aqio comienza el footer */
-.contactos_derechos_reservaos{
-    width: 100%;
-    background: #d9d9d938;
+.icon-plus{
+    color: #ffff;
 }
 
-.footer_contacto_programa{
+/* aqui termina el boton de redes sociales fijo*/
+
+
+
+/*css de las imagenes sobrepuestas  */
+
+.imgenes_mostrar{
+    height: 100vh;
+    width: 100vw;
+    background-color: #8bc34a82;
+    display: none;
+    position: fixed;
+    top: 1px;
+    z-index: 1;
+    
+}
+.ocultar{
     display: flex;
-    justify-content: space-around;
-    color: #cfe5b8;
+    justify-content: end;
 }
-
-.footer_contacto_programa ul{
-    list-style: none;
-    margin-top: 30px;
-}
-.footer_contacto_programa li{
-    margin-top: 20px;
-}
-
-.footer_programa li a{
+.ocultar h3{
+    margin-right: 40px;
     cursor: pointer;
-
+    color: black;
 }
-.footer_contacto_programa li a{
-    color: white;
-    text-decoration: none;
-}
-
-.footer_contacto h3{
-    text-align: center;
-    font-size: 25px;
-}
-.footer_programa h3{
-    text-align: center;
-    font-size: 25px;
-}
-
-.footer_contacto p{
-    border: 1px solid white;
-    margin: 6px;
-    width: 78px;
-}
-
-.divisor_footer{
+.imagen-terapias{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    width: 90%;
 }
-.divisor_footer p{
+.imagen-terapias img{
+    width: 350px;
+    height: 300px;
+
+}
+
+.texto_especialidades{
+    width: 100%;
+    color: black;
+    justify-content: center;
+    display: flex;
+    margin-top: 32px;
+}
+.text{
+    text-align: center;
     border: 1px solid white;
     width: 75%;
-    text-align: center;
-
-}
-.todos_los_derechos_redes_sociales{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.derechos{
-    color: #8b8b8b;
-}
-.redes_sociales_footer ul{
-    display: flex;
-    list-style: none;
-}
-.redes_sociales_footer .icon-facebook, .icon-whatsapp, .icon-instagram{
-    color: white;
-    font-size: 30px;
-
+    background: #919191;
+    font-size: 21px;
+    color: #6b1c78;
+    font-style: oblique;
 }
 
-.redes_sociales_footer a{
-    text-decoration: none;
-}
-/*termina el footer*/
+/* fin css de las imagenes sobrepuestas  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -603,7 +653,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .redes a, .icon-plus{
         display: block;
         text-decoration: none;
-        background-color: #cc2b2b;
+        background-color:  #5c388c;
         color:#fff;
         width: 40px;
         height: 40px;
@@ -618,7 +668,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     
     .redes a:hover{
         background: #fff;
-        color: #cc2b2b;
+        color:  #5c388c;
     }
     .redes a{
         margin-bottom: -15px;
@@ -635,7 +685,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     
     .icon-plus{
         cursor: pointer;
-        background: #f44141;
+        background:  #5c388c;
         font-size: 23px;
     
     }
@@ -653,7 +703,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         position: absolute;
         font-size: 12px;
         transform: translateY(-50%);
-        background: rgb(51, 51, 51);
+        background:  #5c388c;
         text-align: end;
         transition: all 0.1s ease-out 0s;
         font-family: unset;
@@ -669,6 +719,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
     .container-all-slider{
         height: 400px;
+    }
+    .container-all-slider img{
+        max-height: 399px;
     }
     /*aqui termina el responsib del slider*/
 
@@ -697,6 +750,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .nosotros_desc p{
         font-size: 14px;
     }
+    .box_nosotros_container h2{
+        left: 90px;
+    }
     .imagen-terapias{
         width: 100%;
     }
@@ -722,12 +778,22 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         display: none;
     }
 
+    .contacto_phone i{
+        margin: 0 0px 0px 0px;
+    }
+    .contacto_whatsapp i{
+        margin: 0 0px 0px 0px;
+    }
+
 
 
 }
 @media screen and (max-width: 425px){
     .container-all-slider{
-        height: 220px;
+        height: 242px;
+    }
+    .pagination{
+        display: none;
     }
 
     .box_description{
@@ -836,6 +902,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .icon-plus-contactanos{
         display: none;
     }
+
+    .redes_sociales_footer ul{
+        margin-bottom: 0;
+    }
 }
 @media screen and (max-width: 375px){
     .container-all-slider{
@@ -883,14 +953,24 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .icon-plus-contactanos{
         display: none;
     }
+    .pagination{
+        display: none;
+    }
 }
 @media screen and (max-width: 320px){
     .container-all-slider{
         height: 176px;
     }
 
+    .container-all-slider img{
+        height: 174px;
+    }
     .nosotros_desc{
         width: 304px;
+    }
+
+    .nosotros_desc p{
+        font-size: 12px;
     }
 
     .box_des_especialista{
@@ -929,6 +1009,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
     #caja-constelaciones-familiares .text p {
         font-size: 15px;
+    }
+    .pagination{
+        display: none;
     }
 
 
